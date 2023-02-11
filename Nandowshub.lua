@@ -1,4 +1,4 @@
-local OrionLib = 
+local OrionLib =
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Nandow's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
 local Tab = Window:MakeTab({
@@ -13,9 +13,15 @@ Tab:AddLabel("Este hub é feito por Nandow_21#8597")
 Tab:AddLabel("Ele foi feito para conter vários scripts de vários jogos!")
 Tab:AddLabel("Caso queira que algúm script seja adicionado")
 Tab:AddLabel("Chame no Discord: Nandow_21#8597")
+Tab:AddButton({
+	Name = "Entre Na Viper X! Copiar Link",
+	Callback = function()
+      		setclipboard("https://discord.gg/viperx")
+  	end    
+})
 Tab:AddLabel("Divirta-se!")
 local Tab = Window:MakeTab({
-        Name = "Blox Fruits!",
+        Name = "Blox Fruits!",	
         Icon = "rbxassetid://4483345998",
 	    PremiumOnly = false
 })
@@ -47,7 +53,7 @@ Tab:AddButton({
         loadstring(game:HttpGet('https://raw.githubusercontent.com/VEZ2/NEVAHUB/main/2'))()
   	end    
 })
-
+Tab:AddLabel("Mais em breve")
 
 local Tab = Window:MakeTab({
 	Name = "A One Piece Game",
@@ -81,6 +87,38 @@ Tab:AddLabel("A Key do Nuke Hub tem que ser gon")
 Tab:AddLabel("Mais em breve!")
 
 local Tab = Window:MakeTab({
+	Name = "Murder Mystermy 2",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = ""
+})
+Tab:AddButton({
+	Name = "Vinixyus Gui",
+	Callback = function()
+		  loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+	end
+})
+Tab:AddButton({
+	Name = "Drifter507 Gui",
+	Callback = function()
+		 loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+	end
+})
+Tab:AddButton({
+	Name = "Eclipse Hub",
+	Callback = function()
+		 getgenv().mainKey = "nil"
+
+local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https://api.eclipsehub.xyz/auth"c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end
+})
+
+Tab:Addlabel("Em breve mais!")
+
+local Tab = Window:MakeTab({
 	Name = "Extras!",
     Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -101,3 +139,4 @@ Tab:AddButton({
 		  loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end
 })
+Tab:AddLabel("Mais em breve")
