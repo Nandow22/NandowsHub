@@ -140,4 +140,4 @@ Tab:AddButton({
 	end
 })
 
-Tab:AddLabel("Mais em breve")
+Tab:Addlabel("Em breve mais!")
