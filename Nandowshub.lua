@@ -1,6 +1,6 @@
 local OrionLib =
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Nandow's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
+local Window = OrionLib:MakeWindow({Name = "Nandow's Hub Universal", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
 local Tab = Window:MakeTab({
 	Name = "Infos",
 	Icon = "rbxassetid://4483345998",
