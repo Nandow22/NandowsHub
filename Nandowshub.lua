@@ -1,5 +1,4 @@
-local OrionLib = 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 local Window = OrionLib:MakeWindow({Name = "Nandow's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
 local Tab = Window:MakeTab({
 	Name = "Infos",
@@ -81,7 +80,7 @@ Tab:AddLabel("A Key do Nuke Hub tem que ser gon")
 Tab:AddLabel("Mais em breve!")
 
 local Tab = Window:MakeTab({
-	Name = "A One Piece Game",
+	Name = "Extras!",
     Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -90,8 +89,14 @@ local Section = Tab:AddSection({
 	Name = ""
 })
 Tab:AddButton({
-    Name = "",
+    Name = "Infinite Yield",
     Callback = function()
-            loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+           loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     end
+})
+Tab:AddButton({
+	Name = "DarkDex"
+	Callback = function()
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
+	end
 })
