@@ -1,6 +1,6 @@
 local OrionLib =
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Nandow's Hub Universal", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
+local Window = OrionLib:MakeWindow({Name = "Nandow's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "Nandow's Hub"})
 local Tab = Window:MakeTab({
 	Name = "Infos",
 	Icon = "rbxassetid://4483345998",
@@ -86,12 +86,53 @@ Tab:AddLabel("A key do Project Lightining é no Discord!")
 Tab:AddLabel("A Key do Nuke Hub tem que ser gon")
 Tab:AddLabel("Mais em breve!")
 
+
+local Tab = Window:MakeTab({
+	Name = "Pet Simulator X",
+    Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Section = Tab:AddSection({
+	Name = ""
+})
+Tab:AddButton({
+	Name = "Project WD",
+	Callback = function()
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/Muhammad6196/Project-WD/main/Mainstring.lua"))()
+	end
+})
+Tab:AddButton({
+	Name = "Link da key do Project WD, cole no seu Navegador!",
+	Callback = function()
+      		setclipboard("https://w41k3rscripts.com/projectwd/index.php")
+  	end    
+})
+Tab:AddButton({
+	Name = "Cipex-rbx",
+	Callback = function()
+		  loadstring(game:HttpGet("https://raw.githubusercontent.com/cipex-rbx/cipex/main/loader.lua"))
+	end
+})
+Tab:AddLabel("A Key Bind é Right Shift, Shift direito")
+
+Tab:AddButton({
+	Name = "Catalyst V2",
+	Callback = function()
+		  loadstring(game:HttpGet('https://raw.githubusercontent.com/destylol/catalyst/itachi/main.lua'))()
+	end
+})
+Tab:AddButton({
+	Name = "Link Key Catalyst V2, colar no navegador",
+	Callback = function()
+		  setclipboard("https://workink.xyz/3hk/catalyst")
+	end
+})
+
 local Tab = Window:MakeTab({
 	Name = "Murder Mystermy 2",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-
 local Section = Tab:AddSection({
 	Name = ""
 })
@@ -118,6 +159,7 @@ end
 
 Tab:Addlabel("Em breve mais!")
 
+
 local Tab = Window:MakeTab({
 	Name = "Extras!",
     Icon = "rbxassetid://4483345998",
@@ -139,4 +181,6 @@ Tab:AddButton({
 		  loadstring(game:HttpGet("https://raw.githubusercontent.com/Babyhamsta/RBLX_Scripts/main/Universal/BypassedDarkDexV3.lua", true))()
 	end
 })
+
 Tab:AddLabel("Mais em breve!")
+
